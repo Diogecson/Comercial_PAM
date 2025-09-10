@@ -185,7 +185,7 @@
     }
 
     async function carregarTudo() {
-      const res = await fetch("https://opensheet.elk.sh/12fP3mNTB1WwRE4Y41Xjpx9TzdfhXaVrZ5B-XsO9jgEc/base");
+      const res = await fetch("https://docs.google.com/spreadsheets/d/16UqazUeBoeNW7sCSMX5JgBUE1KLDylCtLygBg9PcNzw/RESULTADO_AUTOMATICO_PAM");
       const dados = await res.json();
 
       const internos = dados.filter(d => d["Tipo"] === "Interno").sort((a,b) => b["TOTAL GERAL"] - a["TOTAL GERAL"]);
